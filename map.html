@@ -19,14 +19,24 @@
   </head>
   <body>
 	<div id="nav" style="width:80%;height:80%;margin:auto">
-    <button onclick="changePosition()">Click me</button>
+<marquee behaviour=scroll>
+    <button onclick="goForward()">Go Forward</button>	
+    <button onclick="goBackward()">Go Backward</button>	
+</marquee>
+
+
     <div id="pano" style="width: 45%; height: 100%;float:left"></div>
     <div id="map" style="width: 25%; height: 100%;float:left"></div>
+
     <script>
       /*
        * Click the map to set a new location for the Street View camera.
        */
+	//Psudo import long and langs
 
+      var poss = [[46.003257147967815399169921875,8.95168307],
+		 [46.0030053555965423583984375,8.95151794888079166412353515625], 
+		 [46.0028466023504734039306640625,8.9511700160801410675048828125]];	
       var map;
       var panorama;
 
@@ -56,16 +66,25 @@
          // sv.getPanorama({location: event.latLng, radius: 50}, processSVData);
         });
       }
+    var place = 0;
+    function goForward(){
+    place++;
+    changePosition();
+    }
+    function goBackward(){
+    place--;
+    changePosition();
+    }
     function changePosition(){
 
         panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
-	var position = {lat: 46.00286965258419513702392578125, lng: 8.951235897839069366455078125,
+	var position = {lat: poss[place][0], lng: poss[place][1],
 	linksControl: false,
         panControl: false,
         enableCloseButton: false}
         var sv = new google.maps.StreetViewService();
 	sv.getPanorama({location: position, radius:50}, processSVData);
-	Console.log("running code");
+	console.log("running code" + place);
 	}
  
       function processSVData(data, status) {
@@ -102,5 +121,6 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBOVPNlWVB4MIP239EKZSy3znmo5w2xY&callback=initMap">
     </script>
 </div>
+
   </body>
 </html>
