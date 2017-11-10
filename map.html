@@ -22,6 +22,7 @@
 <marquee behaviour=scroll>
     <button onclick="goForward()">Go Forward</button>	
     <button onclick="goBackward()">Go Backward</button>	
+    <h1 id="title"> Lets Run </h1>
 </marquee>
 
 
@@ -65,14 +66,23 @@
         map.addListener('click', function(event) {
          // sv.getPanorama({location: event.latLng, radius: 50}, processSVData);
         });
+      changeposition();
       }
     var place = 0;
     function goForward(){
     place++;
+    if(place>=poss.length){
+    place--;
+    }else if(place==poss.length-1){
+    document.getElementById("title").innerHTML = ("YOUVE FINISHED YOUR RUN GOOD JOB");
+    }
     changePosition();
     }
     function goBackward(){
     place--;
+    if(place<0){
+    place++;
+    }
     changePosition();
     }
     function changePosition(){
