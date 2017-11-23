@@ -10,6 +10,12 @@ body {
 
 }
 
+#secretclickbox{
+	display: None;
+
+
+}
+
 #drop{
 	font-family: "Arial";
 	font-size: 40pt;

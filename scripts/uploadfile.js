@@ -1,3 +1,4 @@
+var files = []; 
 function doTheDrag(e){
 	e.stopPropagation();
     e.preventDefault();
@@ -10,31 +11,29 @@ function doTheDrop(e){
  	e.stopPropagation();
     e.preventDefault();
 	
-	var files = e.dataTransfer.files; // Array of all files
-	var output = [];
-	//placeholder crap code to replace with proper parsing stuff :)
+	files = files.concat(e.dataTransfer.files); //concat might break it idk?
  }		
 
 function doTheClick(e){
 	e.stopPropagation();
     e.preventDefault();
 	
+
 	$('#secretclickbox').trigger('click');
-
 }
-
-function doTheParse(files){
-	
-
-}
-	
 
 $(document).ready(function(){
 
 
 	var dropZone = document.getElementById('drop');
+	var clickBox = $('#secretclickbox');
 	dropZone.addEventListener('dragover', doTheDrag, false);
 	dropZone.addEventListener('drop', doTheDrop, false);
 	dropZone.addEventListener('click',doTheClick, false); 
+	clickBox.on('change', function(e){
+	  files = files.concat(e.target.files);
+	  console.log(files);
+	});
+	
        
 });
