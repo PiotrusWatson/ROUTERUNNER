@@ -7,6 +7,7 @@ $(document).ready(function(){
 	if (wayPoints === undefined){
 		console.error("YOU SHOULDN'T BE HERE (TODO: add UI stuff telling people how shouldn't be here they are");
 	}
+	else console.log(wayPoints);
 
 });
 
