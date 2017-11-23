@@ -1,5 +1,4 @@
 var files = []; 
-trkpts= [];
 //object that contains all relevant data :)
 function wayPoint(lon, lat, datestr){
 	this.lon = lon;
@@ -11,7 +10,6 @@ function wayPoint(lon, lat, datestr){
 	};	  
 }
 
-wayPoints = [];
 
 
 function doTheDrag(e){
@@ -57,8 +55,9 @@ function doTheUpload(uploadedfile){ //TODO: flesh out function.
 /** Opens the gpx text and dumps it all into point objects. 
  * Has a callback, so that things happen only when it completes**/
 function parseGPX(text, _callback){
-	$.xml=$($.parseXML(text));	
-	trkpts = $.xml.find("trkpt");
+	$.xml=$($.parseXML(text));
+	var	wayPoints = [];
+	var trkpts = $.xml.find("trkpt");
 	for (var i = 0; i < trkpts.length; i++){
 	  //get a trackpoint
 	  	var trkpt = $(trkpts[i]);
