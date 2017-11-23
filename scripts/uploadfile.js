@@ -1,6 +1,6 @@
 
 //object that contains all relevant data :)
-function wayPoint(lon, lat, datestr){
+function wayPoint(lat, lon, datestr){
 	this.lon = lon;
 	this.lat = lat;
 	this.datetime = 0;
