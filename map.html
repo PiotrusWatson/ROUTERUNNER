@@ -18,16 +18,22 @@
     </style>
   </head>
   <body>
-	<div id="nav" style="width:80%;height:80%;margin:auto">
-<marquee behaviour=scroll>
-    <button onclick="goForward()">Go Forward</button>	
-    <button onclick="goBackward()">Go Backward</button>	
-    <h1 id="title"> Lets Run </h1>
-</marquee>
+    	
+	<!--div id="nav" style="width:80%;height:80%;margin:auto"-->
+
+	
+    	
+    
 
 
-    <div id="pano" style="width: 45%; height: 100%;float:left"></div>
-    <div id="map" style="width: 25%; height: 100%;float:left"></div>
+
+    <div id="pano" style="width: 75%; height: 100%;float:left; z-index: -1;"></div>
+    <div id="map" style="width: 25%; height: 100%;float:left; z-index: -1;"></div>
+    <h1 id="title" style = "position: absolute; left:35%; margin-left: -25px; background-color: #80ced6;"> Lets Run </h1>
+    <div style = "position: absolute; left:33%; margin-left: -25px; top:80%;">
+    <button onclick="goForward()">Go Forward</button>
+    <button onclick="goBackward()">Go Backward</button>
+    </div>
 
     <script>
       /*
