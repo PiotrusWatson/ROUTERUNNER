@@ -11,7 +11,7 @@ function wayPoint(lon, lat, datestr){
 	};	  
 }
 
-window.wayPoints = [];
+wayPoints = [];
 
 
 function doTheDrag(e){
@@ -25,8 +25,8 @@ function readFile(f){
 	var reader = new FileReader();
 	reader.onload = (function(reader)
 	 { return function(){
-						  parseGPX(reader.result);
-						 
+						  parseGPX(reader.result, ()=> window.location.href = "map.html");
+					 	  	  
 						}
 	 })(reader);
 	reader.readAsText(f);
@@ -54,7 +54,9 @@ function doTheUpload(uploadedfile){ //TODO: flesh out function.
   readFile(uploadedfile);
  }
 
-function parseGPX(text){
+/** Opens the gpx text and dumps it all into point objects. 
+ * Has a callback, so that things happen only when it completes**/
+function parseGPX(text, _callback){
 	$.xml=$($.parseXML(text));	
 	trkpts = $.xml.find("trkpt");
 	for (var i = 0; i < trkpts.length; i++){
@@ -66,9 +68,9 @@ function parseGPX(text){
 		var point = new wayPoint(trkpt.attr('lat'), trkpt.attr('lon'), datestr);
 		//store int version of datestr
 		point.addDateTime(datestr); 
-		console.log(point);
-		window.wayPoints.push(point);	
-
+		wayPoints.push(point);	
+	localStorage.setItem("wayPoints", wayPoints);
+	_callback();
 	}
 }
 
