@@ -1,18 +1,32 @@
 var files = []; 
+trkpts= [];
+//object that contains all relevant data :)
+function wayPoint(lon, lat){
+	this.lon = lon;
+	this.lat = lat;
+	this.datetime = 0;
+
+	this.addDateTime = function(datestr){
+		this.datetime = Date.parse(datestr);
+	};	  
+};
+
+wayPoints = [];
+
 
 function doTheDrag(e){
 	e.stopPropagation();
     e.preventDefault();
     e.dataTransfer.dropEffect = 'copy';
+	//TODO: change button border when it's over this
 
 }
 function readFile(f){
 	var reader = new FileReader();
 	reader.onload = (function(reader)
 	 { return function(){
-						  contents = reader.result;
-						  var lines = contents.split('\n');
-						  console.log(contents);
+						  parseGPX(reader.result);
+						 
 						}
 	 })(reader);
 	reader.readAsText(f);
@@ -22,7 +36,7 @@ function doTheDrop(e){
   	//stop normal things from	console.log(files); happening
  	e.stopPropagation();
     e.preventDefault();
-	
+	//TODO: fire off some cool css animation here (border gets real big?)
 	doTheUpload(e.dataTransfer.files[0]); //concat might break it idk?
  }		
 
@@ -34,16 +48,23 @@ function doTheClick(e){
 	$('#secretclickbox').trigger('click');
 }
 
-function doTheUpload(uploadedfile){ //checks if file is The Correct Mime Type
-  //currently broken until find correct mimetype/other solution 
+function doTheUpload(uploadedfile){ //TODO: flesh out function.  
+  //Will check if file currently is or isn't a gpx (if not will do some kinda
+  //rejection animation?)
   readFile(uploadedfile);
  }
-
+parse integer
 function parseGPX(text){
-	parser = new DOMParser();
-	window.xml = parser.parseFromString(text, "text/xml");
-	console.log(window.xml);
+	$.xml=$($.parseXML(text));	
+	trkpts = $.xml.find("trkpt");
+	for (var i = 0; i < trkpts.length; i++){
+	  	var trkpt = $(trkpts[i]);
+		var point = wayPoint(trkpt.attr('lat'), trkpt.attr('lon'));
+		point.addDateTime(trkpt.children('time').attrs);
+		console.log(point);
+		wayPoints.push(point);	
 
+	}
 }
 
 
@@ -61,7 +82,7 @@ $(document).ready(function(){
 	clickBox.on('change', function(e){
 	  doTheUpload(e.target.files[0]);
 	  console.log(files);
-
+		
 	  	});
 	
        
