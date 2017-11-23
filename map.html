@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>RouteRunner</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -16,18 +17,26 @@
         padding: 0;
       }
     </style>
+
   </head>
   <body>
-	<div id="nav" style="width:80%;height:80%;margin:auto">
-<marquee behaviour=scroll>
-    <button onclick="goForward()">Go Forward</button>	
-    <button onclick="goBackward()">Go Backward</button>	
-    <h1 id="title"> Lets Run </h1>
-</marquee>
+    	
+	<!--div id="nav" style="width:80%;height:80%;margin:auto"-->
+
+	
+    	
+    
 
 
-    <div id="pano" style="width: 45%; height: 100%;float:left"></div>
-    <div id="map" style="width: 25%; height: 100%;float:left"></div>
+
+    <div id="pano" style="width: 75%; height: 100%;float:left; z-index: -1;"></div>
+    <div id="map" style="width: 25%; height: 100%;float:left; z-index: -1;"></div>
+    <h1 id="title" style = "position: absolute; left:35%; margin-left: -25px; background-color: #80ced6; padding: 15px 32px; border-radius: 25px;"> Lets Run </h1>
+    <div style = "position: absolute; left:28%; margin-left: -25px; top:80%; overflow: hidden;">
+    <div class= "button" onclick="goBackward(); float:left;">Go Backward</div>
+    <div class="button" onclick="goForward(); float:left;">Go Forward</div>
+    
+    </div>
 
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
     <script src="scripts/map.js"></script>
