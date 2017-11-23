@@ -2,10 +2,11 @@
        * Click the map to set a new location for the Street View camera.
        */
 
-wayPoints = localStorage.getItem("wayPoints");
+wayPoints = JSON.parse(localStorage.getItem("wayPoints"));
 $(document).ready(function(){
-	console.log(wayPoints);
-
+	if (wayPoints === undefined){
+		console.error("YOU SHOULDN'T BE HERE (TODO: add UI stuff telling people how shouldn't be here they are");
+	}
 
 });
 

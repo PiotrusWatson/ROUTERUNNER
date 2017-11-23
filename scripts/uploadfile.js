@@ -1,4 +1,4 @@
-var files = []; 
+
 //object that contains all relevant data :)
 function wayPoint(lon, lat, datestr){
 	this.lon = lon;
@@ -67,8 +67,10 @@ function parseGPX(text, _callback){
 		var point = new wayPoint(trkpt.attr('lat'), trkpt.attr('lon'), datestr);
 		//store int version of datestr
 		point.addDateTime(datestr); 
-		wayPoints.push(point);	
-	localStorage.setItem("wayPoints", wayPoints);
+		wayPoints.push(point);
+	var data = { }
+	data.wayPoints = wayPoints;	
+	localStorage.setItem("wayPoints", JSON.stringify(data));
 	_callback();
 	}
 }
@@ -86,9 +88,7 @@ $(document).ready(function(){
 	dropZone.addEventListener('click',doTheClick, false); 
 
 	clickBox.on('change', function(e){
-	  doTheUpload(e.target.files[0]);
-	  console.log(files);
-		
+	  doTheUpload(e.target.files[0]);	
 	  	});
 	
        
