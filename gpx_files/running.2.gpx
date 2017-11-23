@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>http://moodle2.gla.ac.uk/pluginfile.php/1355384/mod_resource/content/1/Lugano.gpx</title><link rel="stylesheet" type="text/css" href="running_files/viewsource.css" /></head><body id="viewsource" class="highlight" style="-moz-tab-size: 4" contextmenu="actions"><pre id="line1"><span></span><span class="pi">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><span>
+<span id="line2"></span></span><span>&lt;<span class="start-tag">gpx</span> <span class="attribute-name">creator</span>="<a class="attribute-value">Garmin Connect</a>" <span class="attribute-name">version</span>="<a class="attribute-value">1.1</a>"
+<span id="line3"></span>  <span class="attribute-name">xsi:schemaLocation</span>="<a class="attribute-value">http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/11.xsd</a>"
+<span id="line4"></span>  <span class="attribute-name">xmlns</span>="<a class="attribute-value">http://www.topografix.com/GPX/1/1</a>"
+<span id="line5"></span>  <span class="attribute-name">xmlns:ns3</span>="<a class="attribute-value">http://www.garmin.com/xmlschemas/TrackPointExtension/v1</a>"
+<span id="line6"></span>  <span class="attribute-name">xmlns:ns2</span>="<a class="attribute-value">http://www.garmin.com/xmlschemas/GpxExtensions/v3</a>" <span class="attribute-name">xmlns:xsi</span>="<a class="attribute-value">http://www.w3.org/2001/XMLSchema-instance</a>"&gt;</span><span>
+<span id="line7"></span>  </span><span>&lt;<span class="start-tag">metadata</span>&gt;</span><span>
+<span id="line8"></span>    </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://moodle2.gla.ac.uk/pluginfile.php/1355384/mod_resource/content/1/connect.garmin.com">connect.garmin.com</a>"&gt;</span><span>
+<span id="line9"></span>      </span><span>&lt;<span class="start-tag">text</span>&gt;</span><span>Garmin Connect</span><span>&lt;/<span class="end-tag">text</span>&gt;</span><span>
+<span id="line10"></span>    </span><span>&lt;/<span class="end-tag">link</span>&gt;</span><span>
+<span id="line11"></span>    </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:10.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line12"></span>  </span><span>&lt;/<span class="end-tag">metadata</span>&gt;</span><span>
+<span id="line13"></span>  </span><span>&lt;<span class="start-tag">trk</span>&gt;</span><span>
+<span id="line14"></span>    </span><span>&lt;<span class="start-tag">name</span>&gt;</span><span>Lugano Running</span><span>&lt;/<span class="end-tag">name</span>&gt;</span><span>
+<span id="line15"></span>    </span><span>&lt;<span class="start-tag">type</span>&gt;</span><span>running</span><span>&lt;/<span class="end-tag">type</span>&gt;</span><span>
+<span id="line16"></span>    </span><span>&lt;<span class="start-tag">trkseg</span>&gt;</span><span>
+<span id="line17"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.003257147967815399169921875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95168307237327098846435546875</a>"&gt;</span><span>
+<span id="line18"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>281.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line19"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:10.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line20"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line21"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line22"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line23"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>59</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line24"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line25"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line26"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line27"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00324717350304126739501953125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95168055780231952667236328125</a>"&gt;</span><span>
+<span id="line28"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>281.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line29"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:11.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line30"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line31"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line32"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line33"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>59</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line34"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line35"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line36"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line37"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0030994005501270294189453125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95173990167677402496337890625</a>"&gt;</span><span>
+<span id="line38"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line39"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:20.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line40"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line41"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line42"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line43"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line44"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line45"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line46"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line47"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0030053555965423583984375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95151794888079166412353515625</a>"&gt;</span><span>
+<span id="line48"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line49"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:28.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line50"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line51"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line52"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>81</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line53"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line54"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line55"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line56"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line57"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.002952717244625091552734375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95139238797128200531005859375</a>"&gt;</span><span>
+<span id="line58"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line59"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:32.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line60"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line61"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line62"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>86</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line63"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line64"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line65"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line66"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line67"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00293871946632862091064453125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95136187784373760223388671875</a>"&gt;</span><span>
+<span id="line68"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line69"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:33.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line70"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line71"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line72"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>91</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line73"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line74"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line75"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line76"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line77"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00292555987834930419921875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9513319544494152069091796875</a>"&gt;</span><span>
+<span id="line78"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line79"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:34.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line80"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line81"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line82"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>97</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line83"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line84"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line85"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line86"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line87"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0029126517474651336669921875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9513064734637737274169921875</a>"&gt;</span><span>
+<span id="line88"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line89"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:35.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line90"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line91"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line92"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>102</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line93"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line94"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line95"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line96"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line97"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0028953850269317626953125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95128493197262287139892578125</a>"&gt;</span><span>
+<span id="line98"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line99"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:36.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line100"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line101"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line102"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>107</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line103"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line104"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line105"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line106"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line107"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00288071669638156890869140625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.951262049376964569091796875</a>"&gt;</span><span>
+<span id="line108"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line109"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:37.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line110"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line111"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line112"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>111</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line113"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line114"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line115"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line116"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line117"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00286965258419513702392578125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.951235897839069366455078125</a>"&gt;</span><span>
+<span id="line118"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line119"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:38.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line120"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line121"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line122"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>114</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line123"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line124"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line125"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line126"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line127"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0028466023504734039306640625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9511700160801410675048828125</a>"&gt;</span><span>
+<span id="line128"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line129"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:40.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line130"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line131"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line132"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>120</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line133"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>86</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line134"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line135"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line136"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line137"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00282019935548305511474609375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.951110504567623138427734375</a>"&gt;</span><span>
+<span id="line138"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line139"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:42.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line140"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line141"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line142"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>125</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line143"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>86</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line144"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line145"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line146"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line147"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.002734117209911346435546875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9508788287639617919921875</a>"&gt;</span><span>
+<span id="line148"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>282.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line149"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:49.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line150"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line151"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line152"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>126</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line153"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line154"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line155"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line156"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line157"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0026290081441402435302734375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.950729630887508392333984375</a>"&gt;</span><span>
+<span id="line158"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>283.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line159"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:55:55.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line160"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line161"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line162"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>129</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line163"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line164"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line165"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line166"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line167"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.002470590174198150634765625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.950553946197032928466796875</a>"&gt;</span><span>
+<span id="line168"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>284</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line169"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:03.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line170"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line171"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line172"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>130</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line173"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line174"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line175"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line176"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line177"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00242524407804012298583984375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95050373859703540802001953125</a>"&gt;</span><span>
+<span id="line178"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>284.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line179"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:06.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line180"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line181"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line182"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>133</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line183"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line184"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line185"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line186"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line187"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00239473395049571990966796875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95045629702508449554443359375</a>"&gt;</span><span>
+<span id="line188"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>284.399993896484375</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line189"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:08.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line190"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line191"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line192"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>136</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line193"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line194"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line195"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line196"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line197"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00236087106168270111083984375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95041153766214847564697265625</a>"&gt;</span><span>
+<span id="line198"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>284.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line199"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:10.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line200"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line201"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line202"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>133</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line203"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line204"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line205"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line206"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line207"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00219742394983768463134765625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95024825818836688995361328125</a>"&gt;</span><span>
+<span id="line208"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>285.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line209"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:19.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line210"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line211"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line212"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>134</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line213"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line214"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line215"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line216"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line217"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00212986581027507781982421875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95017852075397968292236328125</a>"&gt;</span><span>
+<span id="line218"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>286.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line219"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:23.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line220"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line221"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line222"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>137</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line223"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line224"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line225"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line226"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line227"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0020275227725505828857421875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95008833147585391998291015625</a>"&gt;</span><span>
+<span id="line228"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>287.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line229"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:28.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line230"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line231"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line232"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>140</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line233"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line234"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line235"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line236"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line237"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00184387527406215667724609375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94998305477201938629150390625</a>"&gt;</span><span>
+<span id="line238"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>288.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line239"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:36.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line240"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line241"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line242"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>139</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line243"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line244"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line245"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line246"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line247"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00170238874852657318115234375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94989135675132274627685546875</a>"&gt;</span><span>
+<span id="line248"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>289.399993896484375</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line249"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:42.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line250"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line251"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line252"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>144</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line253"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line254"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line255"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line256"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line257"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00165058858692646026611328125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94987140782177448272705078125</a>"&gt;</span><span>
+<span id="line258"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>289.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line259"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:44.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line260"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line261"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line262"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>148</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line263"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line264"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line265"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line266"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line267"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00147473625838756561279296875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94978976808488368988037109375</a>"&gt;</span><span>
+<span id="line268"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>290.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line269"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:51.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line270"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line271"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line272"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>147</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line273"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line274"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line275"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line276"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line277"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00140080787241458892822265625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.949766047298908233642578125</a>"&gt;</span><span>
+<span id="line278"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>290.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line279"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:54.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line280"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line281"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line282"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>144</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line283"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line284"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line285"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line286"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line287"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00137884728610515594482421875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9497585035860538482666015625</a>"&gt;</span><span>
+<span id="line288"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>290.20001220703125</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line289"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:56:55.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line290"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line291"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line292"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>140</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line293"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line294"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line295"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line296"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line297"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.001178435981273651123046875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94971542060375213623046875</a>"&gt;</span><span>
+<span id="line298"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>289</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line299"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:03.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line300"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line301"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line302"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>140</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line303"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line304"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line305"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line306"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line307"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00112051703035831451416015625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94971801899373531341552734375</a>"&gt;</span><span>
+<span id="line308"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>288.399993896484375</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line309"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:05.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line310"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line311"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line312"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>144</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line313"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line314"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line315"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line316"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line317"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00093862973153591156005859375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94971181638538837432861328125</a>"&gt;</span><span>
+<span id="line318"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>286.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line319"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:12.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line320"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line321"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line322"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>144</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line323"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line324"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line325"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line326"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line327"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0007871687412261962890625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94968566484749317169189453125</a>"&gt;</span><span>
+<span id="line328"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>285.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line329"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:18.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line330"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line331"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line332"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>141</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line333"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line334"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line335"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line336"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line337"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0006106458604335784912109375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9496155083179473876953125</a>"&gt;</span><span>
+<span id="line338"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>285.399993896484375</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line339"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:26.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line340"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line341"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line342"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>141</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line343"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line344"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line345"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line346"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line347"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00041568279266357421875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94958692602813243865966796875</a>"&gt;</span><span>
+<span id="line348"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>284.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line349"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:34.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line350"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line351"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line352"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>139</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line353"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line354"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line355"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line356"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line357"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00020370446145534515380859375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9495955593883991241455078125</a>"&gt;</span><span>
+<span id="line358"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>283.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line359"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:42.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line360"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line361"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line362"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>144</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line363"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>82</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line364"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line365"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line366"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line367"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0001702606678009033203125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94959430210292339324951171875</a>"&gt;</span><span>
+<span id="line368"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>283.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line369"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:43.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line370"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line371"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line372"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>147</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line373"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>82</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line374"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line375"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line376"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line377"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00013983435928821563720703125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9495886862277984619140625</a>"&gt;</span><span>
+<span id="line378"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>283.399993896484375</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line379"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:44.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line380"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line381"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line382"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>144</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line383"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line384"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line385"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line386"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line387"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.00008568726480007171630859375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94957728683948516845703125</a>"&gt;</span><span>
+<span id="line388"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>283.399993896484375</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line389"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:46.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line390"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line391"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line392"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>140</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line393"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line394"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line395"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line396"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line397"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.99988393485546112060546875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.949579633772373199462890625</a>"&gt;</span><span>
+<span id="line398"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>282.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line399"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:53.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line400"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line401"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line402"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>140</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line403"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line404"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line405"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line406"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line407"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.99974806420505046844482421875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9495752751827239990234375</a>"&gt;</span><span>
+<span id="line408"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>283.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line409"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:57:58.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line410"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line411"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line412"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>136</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line413"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line414"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line415"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line416"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line417"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.99958059377968311309814453125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94960804842412471771240234375</a>"&gt;</span><span>
+<span id="line418"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>282.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line419"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:58:04.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line420"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line421"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line422"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>140</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line423"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line424"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line425"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line426"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line427"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.9994452260434627532958984375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94966789521276950836181640625</a>"&gt;</span><span>
+<span id="line428"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>282</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line429"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:58:09.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line430"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line431"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line432"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>143</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line433"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line434"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line435"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line436"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line437"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.9992658533155918121337890625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94977845251560211181640625</a>"&gt;</span><span>
+<span id="line438"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line439"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:58:17.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line440"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line441"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line442"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>141</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line443"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line444"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line445"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line446"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line447"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.99907767958939075469970703125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9498181827366352081298828125</a>"&gt;</span><span>
+<span id="line448"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>278</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line449"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:58:25.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line450"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line451"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line452"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>139</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line453"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line454"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line455"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line456"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line457"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.998883135616779327392578125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94973444752395153045654296875</a>"&gt;</span><span>
+<span id="line458"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>276.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line459"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:58:34.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line460"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line461"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line462"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>139</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line463"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line464"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line465"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line466"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line467"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.99875682033598423004150390625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94952439703047275543212890625</a>"&gt;</span><span>
+<span id="line468"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>278.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line469"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:58:42.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line470"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line471"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line472"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>140</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line473"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line474"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line475"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line476"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line477"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.998680293560028076171875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.949275203049182891845703125</a>"&gt;</span><span>
+<span id="line478"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line479"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:58:50.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line480"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line481"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line482"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>139</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line483"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>85</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line484"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line485"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line486"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line487"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.998581387102603912353515625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9490869455039501190185546875</a>"&gt;</span><span>
+<span id="line488"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>281.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line489"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:58:57.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line490"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line491"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line492"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>143</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line493"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line494"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line495"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line496"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line497"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.99846194498240947723388671875</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.948883600533008575439453125</a>"&gt;</span><span>
+<span id="line498"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>282.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line499"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:59:05.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line500"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line501"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line502"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>142</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line503"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line504"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line505"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line506"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line507"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.9983391501009464263916015625</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94866466522216796875</a>"&gt;</span><span>
+<span id="line508"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>283.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line509"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:59:13.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line510"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line511"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line512"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>144</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line513"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line514"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line515"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line516"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line517"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.99823278374969959259033203125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.94844614900648593902587890625</a>"&gt;</span><span>
+<span id="line518"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>285.600006103515625</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line519"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:59:21.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line520"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line521"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line522"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>144</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line523"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>84</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line524"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line525"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line526"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line527"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">45.99811426363885402679443359375</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.9482185803353786468505859375</a>"&gt;</span><span>
+<span id="line528"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>287.79998779296875</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line529"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T12:59:30.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line530"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line531"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line532"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>142</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line533"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>82</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line534"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line535"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line536"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line3077"></span>      </span><span>&lt;<span class="start-tag">trkpt</span> <span class="attribute-name">lat</span>="<a class="attribute-value">46.0032428987324237823486328125</a>" <span class="attribute-name">lon</span>="<a class="attribute-value">8.95206679590046405792236328125</a>"&gt;</span><span>
+<span id="line3078"></span>        </span><span>&lt;<span class="start-tag">ele</span>&gt;</span><span>280</span><span>&lt;/<span class="end-tag">ele</span>&gt;</span><span>
+<span id="line3079"></span>        </span><span>&lt;<span class="start-tag">time</span>&gt;</span><span>2017-06-07T13:31:24.000Z</span><span>&lt;/<span class="end-tag">time</span>&gt;</span><span>
+<span id="line3080"></span>        </span><span>&lt;<span class="start-tag">extensions</span>&gt;</span><span>
+<span id="line3081"></span>          </span><span>&lt;<span class="start-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line3082"></span>            </span><span>&lt;<span class="start-tag">ns3:hr</span>&gt;</span><span>155</span><span>&lt;/<span class="end-tag">ns3:hr</span>&gt;</span><span>
+<span id="line3083"></span>            </span><span>&lt;<span class="start-tag">ns3:cad</span>&gt;</span><span>83</span><span>&lt;/<span class="end-tag">ns3:cad</span>&gt;</span><span>
+<span id="line3084"></span>          </span><span>&lt;/<span class="end-tag">ns3:TrackPointExtension</span>&gt;</span><span>
+<span id="line3085"></span>        </span><span>&lt;/<span class="end-tag">extensions</span>&gt;</span><span>
+<span id="line3086"></span>      </span><span>&lt;/<span class="end-tag">trkpt</span>&gt;</span><span>
+<span id="line3087"></span>    </span><span>&lt;/<span class="end-tag">trkseg</span>&gt;</span><span>
+<span id="line3088"></span>  </span><span>&lt;/<span class="end-tag">trk</span>&gt;</span><span>
+<span id="line3089"></span></span><span>&lt;/<span class="end-tag">gpx</span>&gt;</span><span>
+<span id="line3090"></span></span></pre><menu type="context" id="actions"><menuitem id="goToLine" label="Go to Line\85" accesskey="L"></menuitem><menuitem id="wrapLongLines" label="Wrap Long Lines" type="checkbox"></menuitem><menuitem id="highlightSyntax" label="Syntax Highlighting" type="checkbox" checked="true"></menuitem></menu></body></html>
