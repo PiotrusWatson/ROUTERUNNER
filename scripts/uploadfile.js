@@ -1,11 +1,11 @@
 var files = []; 
 trkpts= [];
 //object that contains all relevant data :)
-function wayPoint(lon, lat){
+function wayPoint(lon, lat, datestr){
 	this.lon = lon;
 	this.lat = lat;
 	this.datetime = 0;
-
+	this.datestr = datestr;
 	this.addDateTime = function(datestr){
 		this.datetime = Date.parse(datestr);
 	};	  
@@ -60,11 +60,12 @@ function parseGPX(text){
 	for (var i = 0; i < trkpts.length; i++){
 	  //get a trackpoint
 	  	var trkpt = $(trkpts[i]);
-	//store its lat/lon
-		var point = new wayPoint(trkpt.attr('lat'), trkpt.attr('lon'));
-		console.log(trkpt.children('time').contents().text());
-		//get its datetime text, convert into a nice int :)
-		point.addDateTime(trkpt.children('time').contents().text()); 
+		//get its stored date string
+		var datestr = trkpt.children('time').contents().text();
+		//dump into obj with lat and long
+		var point = new wayPoint(trkpt.attr('lat'), trkpt.attr('lon'), datestr);
+		//store int version of datestr
+		point.addDateTime(datestr); 
 		console.log(point);
 		wayPoints.push(point);	
 
