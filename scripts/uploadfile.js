@@ -9,7 +9,7 @@ function wayPoint(lon, lat){
 	this.addDateTime = function(datestr){
 		this.datetime = Date.parse(datestr);
 	};	  
-};
+}
 
 wayPoints = [];
 
@@ -53,14 +53,18 @@ function doTheUpload(uploadedfile){ //TODO: flesh out function.
   //rejection animation?)
   readFile(uploadedfile);
  }
-parse integer
+
 function parseGPX(text){
 	$.xml=$($.parseXML(text));	
 	trkpts = $.xml.find("trkpt");
 	for (var i = 0; i < trkpts.length; i++){
+	  //get a trackpoint
 	  	var trkpt = $(trkpts[i]);
-		var point = wayPoint(trkpt.attr('lat'), trkpt.attr('lon'));
-		point.addDateTime(trkpt.children('time').attrs);
+	//store its lat/lon
+		var point = new wayPoint(trkpt.attr('lat'), trkpt.attr('lon'));
+		console.log(trkpt.children('time').contents().text());
+		//get its datetime text, convert into a nice int :)
+		point.addDateTime(trkpt.children('time').contents().text()); 
 		console.log(point);
 		wayPoints.push(point);	
 
