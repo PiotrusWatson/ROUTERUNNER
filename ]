@@ -49,9 +49,9 @@ function initMap() {
     var place = 0;
     function goForward(){
     	place++;
-    	if(place>=wayPoints.length){
+    	if(place>=poss.length){
     		place--;
-    	}else if(place==wayPoints.length-1){
+    	}else if(place==poss.length-1){
     		document.getElementById("title").innerHTML = ("YOUVE FINISHED YOUR RUN GOOD JOB");
     	}
     	changePosition();
@@ -75,7 +75,7 @@ function initMap() {
         	enableCloseButton: false}
         var sv = new google.maps.StreetViewService();
 		console.log(position);
-	sv.getPanorama({location: position, radius:50}, processSVData);
+		sv.getPanorama({location: position, radius:50}, processSVData);
 	
 		console.log("running code" + place);
 	
