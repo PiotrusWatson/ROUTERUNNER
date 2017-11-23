@@ -18,7 +18,8 @@ body {
 
 #drop{
 	font-family: "Arial";
-	font-size: 40pt;
+	font-size: 50px;
+	font-size: 3.5vw;
 	text-align: center;
 	vertical-align: middle;
 	
