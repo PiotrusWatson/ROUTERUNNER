@@ -1,25 +1,40 @@
+function doTheDrag(e){
+	e.stopPropagation();
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'copy';
+
+}
+
+function doTheDrop(e){
+  	//stop normal things from happening
+ 	e.stopPropagation();
+    e.preventDefault();
+	
+	var files = e.dataTransfer.files; // Array of all files
+	var output = [];
+	//placeholder crap code to replace with proper parsing stuff :)
+ }		
+
+function doTheClick(e){
+	e.stopPropagation();
+    e.preventDefault();
+	
+	$('#secretclickbox').trigger('click');
+
+}
+
+function doTheParse(files){
+	
+
+}
+	
+
 $(document).ready(function(){
 
-  $('#drop').on({'dragover dragenter': function(e){
-	e.preventDefault();
-	e.stopPropagation();
-  },
-  'drop': function(e) {
-	var data = e.originalEvent.dataTransfer;
 
-	if (data != null && data.files.length){
-  		e.preventDefault();
-  		e.stopPropagation();
-		$.each(data.files, function(i, file){
-		  	console.log("FILE READ" + i);
-			var reader = new FileReader();
-			reader.onload = $.proxy(function (file, $list, event){	
-			$list.prepend($("<li>").append(file.name));
-			}, this, file, $('#list'));
-		  	//reader.readAsDataURL(file);	
-		}		  
-	}
-
-  });
-  
+	var dropZone = document.getElementById('drop');
+	dropZone.addEventListener('dragover', doTheDrag, false);
+	dropZone.addEventListener('drop', doTheDrop, false);
+	dropZone.addEventListener('click',doTheClick, false); 
+       
 });
