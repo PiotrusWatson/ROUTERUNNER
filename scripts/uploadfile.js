@@ -11,7 +11,7 @@ function wayPoint(lon, lat, datestr){
 	};	  
 }
 
-wayPoints = [];
+window.wayPoints = [];
 
 
 function doTheDrag(e){
@@ -67,7 +67,7 @@ function parseGPX(text){
 		//store int version of datestr
 		point.addDateTime(datestr); 
 		console.log(point);
-		wayPoints.push(point);	
+		window.wayPoints.push(point);	
 
 	}
 }
