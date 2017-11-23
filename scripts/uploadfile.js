@@ -11,7 +11,7 @@ function doTheDrop(e){
  	e.stopPropagation();
     e.preventDefault();
 	
-	files = files.concat(e.dataTransfer.files); //concat might break it idk?
+	doTheUpload(e.dataTransfer.files[0]); //concat might break it idk?
  }		
 
 function doTheClick(e){
@@ -20,6 +20,17 @@ function doTheClick(e){
 	
 
 	$('#secretclickbox').trigger('click');
+}
+
+function doTheUpload(uploadedfile){ //checks if file is The Correct Mime Type
+  if (uploadedfile.type() == 'text/xml'){
+	files.push(uploadedfile);
+	return true;
+  }
+  else {
+	console.log("FUCK");
+	return false;
+  }	
 }
 
 $(document).ready(function(){
@@ -31,9 +42,10 @@ $(document).ready(function(){
 	dropZone.addEventListener('drop', doTheDrop, false);
 	dropZone.addEventListener('click',doTheClick, false); 
 	clickBox.on('change', function(e){
-	  files = files.concat(e.target.files);
+	  doTheUpload(e.target.files[0]);
 	  console.log(files);
-	});
+
+	  	});
 	
        
 });
