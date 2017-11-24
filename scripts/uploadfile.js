@@ -1,13 +1,13 @@
 
 //object that contains all relevant data :)
-function wayPoint(lon, lat, datestr){
+function wayPoint(lat, lon, datestr){
 	this.lon = lon;
 	this.lat = lat;
 	this.datetime = 0;
 	this.datestr = datestr;
 	this.addDateTime = function(datestr){
 		this.datetime = Date.parse(datestr);
-	};	  
+	};
 }
 
 
@@ -16,7 +16,8 @@ function doTheDrag(e){
 	e.stopPropagation();
     e.preventDefault();
     e.dataTransfer.dropEffect = 'copy';
-	//TODO: change button border when it's over this
+	// changes drop box border colour to orange when file is dragged onto it
+	document.getElementById("drop").style.border = "8px solid #FFCC00";
 
 }
 function readFile(f){
@@ -24,7 +25,7 @@ function readFile(f){
 	reader.onload = (function(reader)
 	 { return function(){
 						  parseGPX(reader.result, ()=> window.location.href = "map.html");
-					 	  	  
+
 						}
 	 })(reader);
 	reader.readAsText(f);
@@ -34,25 +35,28 @@ function doTheDrop(e){
   	//stop normal things from	console.log(files); happening
  	e.stopPropagation();
     e.preventDefault();
-	//TODO: fire off some cool css animation here (border gets real big?)
 	doTheUpload(e.dataTransfer.files[0]); //concat might break it idk?
- }		
+ }
 
 function doTheClick(e){
 	e.stopPropagation();
     e.preventDefault();
-	
+
 
 	$('#secretclickbox').trigger('click');
 }
 
-function doTheUpload(uploadedfile){ //TODO: flesh out function.  
-  //Will check if file currently is or isn't a gpx (if not will do some kinda
-  //rejection animation?)
-  readFile(uploadedfile);
+function doTheUpload(uploadedfile){ //TODO: flesh out function.
+  // changes drop box border colour to green if gpx file, red if not
+	if (uploadedfile.name.match(".gpx$")) {
+		document.getElementById("drop").style.border = "8px solid #00FF00";
+	} else {
+		document.getElementById("drop").style.border = "8px solid #FF0000";
+	}
+	readFile(uploadedfile);
  }
 
-/** Opens the gpx text and dumps it all into point objects. 
+/** Opens the gpx text and dumps it all into point objects.
  * Has a callback, so that things happen only when it completes**/
 function parseGPX(text, _callback){
 	$.xml=$($.parseXML(text));
@@ -66,10 +70,10 @@ function parseGPX(text, _callback){
 		//dump into obj with lat and long
 		var point = new wayPoint(trkpt.attr('lat'), trkpt.attr('lon'), datestr);
 		//store int version of datestr
-		point.addDateTime(datestr); 
+		point.addDateTime(datestr);
 		wayPoints.push(point);
 	var data = { }
-	data.wayPoints = wayPoints;	
+	data.wayPoints = wayPoints;
 	localStorage.setItem("wayPoints", JSON.stringify(data));
 	_callback();
 	}
@@ -80,16 +84,21 @@ function parseGPX(text, _callback){
 
 $(document).ready(function(){
 
+	// changes drop box border colour back to default
+	$("body").hover(function(){
+		$("#drop").css("border", "5px solid #64C4AF");
+	});
+
 	//handling all different types of interaction with that middle block - clicks + drags!!
 	var dropZone = document.getElementById('drop');
 	var clickBox = $('#secretclickbox');
 	dropZone.addEventListener('dragover', doTheDrag, false);
 	dropZone.addEventListener('drop', doTheDrop, false);
-	dropZone.addEventListener('click',doTheClick, false); 
+	dropZone.addEventListener('click',doTheClick, false);
 
 	clickBox.on('change', function(e){
-	  doTheUpload(e.target.files[0]);	
+	  doTheUpload(e.target.files[0]);
 	  	});
-	
-       
+
+
 });
