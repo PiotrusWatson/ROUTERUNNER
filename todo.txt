@@ -1,0 +1,18 @@
+play button - go through slides
+
+	show current speed
+	average speed over run
+	distance so far
+
+load immediately into our data - instead of hardcoded swiadjnoandlajild
+make look nice - 
+	background image on front page
+	consistent colours
+	refactor away from green blue colourscheme
+	transparent buttons
+	format title better
+	sounds on
+	lockout file upload
+	
+
+investigate and maybe fix horrifying slowdown
