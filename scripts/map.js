@@ -21,6 +21,7 @@
  };
  var marker;
  var position;
+ var lastpos;
 
 
  /**Loops over wayPoints and pulls out only each lat and long value. Then
@@ -28,27 +29,27 @@
  function drawPath(maps) {
    var drawnPath = [];
    for (var i = 0; i < wayPoints.length; i++) {
-		 //get position
+     //get position
      var pos = {
        lat: parseFloat(wayPoints[i].lat),
        lng: parseFloat(wayPoints[i].lon)
      };
-		 //add to path
+     //add to path
      drawnPath.push(pos);
-		 //slap a circle there
-		 var point = new google.maps.Circle({
-			 strokeColor: 'Black',
-			 strokeOpacity: 1,
-			 strokeWeight: 0.5,
-			 fillColor: 'Red',
-			 fillOpacity: 1,
-			 map: maps,
-			 center: pos,
-			 radius: 1
-		 });
+     //slap a circle there
+     var point = new google.maps.Circle({
+       strokeColor: 'Black',
+       strokeOpacity: 1,
+       strokeWeight: 0.5,
+       fillColor: 'Red',
+       fillOpacity: 1,
+       map: maps,
+       center: pos,
+       radius: 1
+     });
 
    }
-	 //draw the path
+   //draw the path
    var path = new google.maps.Polygon({
      paths: drawnPath,
      strokeColor: 'Red',
@@ -61,7 +62,11 @@
  }
 
 
+ function angleBetweenTwoPoints(pos1, pos2) {
 
+
+
+ }
 
 
  function initMap() {
@@ -79,7 +84,7 @@
      zoom: 16,
      streetViewControl: false
    });
-	 drawPath(map);
+   drawPath(map);
 
    // Set the initial Street View camera to the center of the map
    sv.getPanorama({
@@ -117,7 +122,6 @@
  function changePosition() {
 
    //panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
-   console.log(wayPointz[place].lat);
    position = {
      lat: parseFloat(wayPointz[place].lat),
      lng: parseFloat(wayPointz[place].lon)
@@ -145,23 +149,38 @@
        map: map,
        title: data.location.description
      });
+
+     //set where we're facing to be either 270 or an angle calculated from the
+     //last place we went to
+     if (lastpos === undefined) {
+       var angle = 270;
+     } else {
+       var angle = google.maps.geometry.spherical.computeHeading(data.location.latLng,
+         lastpos);
+     }
+     lastpos = data.location.latLng;
+
      //set the position of the panorama
      panorama.setPano(data.location.pano);
      panorama.setPov({
-       heading: 270,
+       heading: angle,
        pitch: 0
      });
      panorama.setVisible(true);
+
 
      marker.addListener('click', function() {
        var markerPanoID = data.location.pano;
        // Set the Pano to use the passed panoID.
        panorama.setPano(markerPanoID);
        panorama.setPov({
-         heading: 270,
+         heading: angle,
          pitch: 0
        });
        panorama.setVisible(true);
+
+
+
      });
    } else {
      console.error('Street View data not found for this location.');
