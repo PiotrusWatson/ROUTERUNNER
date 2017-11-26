@@ -13,21 +13,19 @@ $(document).ready(function(){
 	}
 });
 
-	
+
 	//Psudo import long and langs
 
 var map;
 var panorama;
+var options = {disableDefaultUI: true, panControl: true, clickToGo: false};
 
 function initMap() {
-    var berkeley = {lat: 46.003257147967815399169921875, 
-	lng: 8.95168307237327098846435546875,
-	linksControl: false,
-	panControl: false,
-	enableCloseButton: false};
+    var berkeley = {lat: 46.003257147967815399169921875,
+	lng: 8.95168307237327098846435546875};
     var sv = new google.maps.StreetViewService();
 
-    panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
+    panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), options);
 
         // Set up the map.
 	map = new google.maps.Map(document.getElementById('map'), {
@@ -56,7 +54,7 @@ function initMap() {
     	}
     	changePosition();
     }
-    
+
 	function goBackward(){
     	place--;
     	if(place<0){
@@ -64,23 +62,20 @@ function initMap() {
     	}
     	changePosition();
     }
-    
+
 	function changePosition(){
 
-        panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
-		console.log(wayPointz[place].lat);	
-		var position = {lat: parseFloat(wayPointz[place].lat), lng: parseFloat(wayPointz[place].lon),
-			linksControl: false,
-        	panControl: false,
-        	enableCloseButton: false}
+        //panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
+		console.log(wayPointz[place].lat);
+		var position = {lat: parseFloat(wayPointz[place].lat), lng: parseFloat(wayPointz[place].lon)}
         var sv = new google.maps.StreetViewService();
 		console.log(position);
 	sv.getPanorama({location: position, radius:50}, processSVData);
-	
+
 		console.log("running code" + place);
-	
+
 	}var wayPointz = wayPoints;
- 
+
     function processSVData(data, status) {
     	if (status === 'OK') {
           var marker = new google.maps.Marker({
@@ -110,4 +105,3 @@ function initMap() {
           console.error('Street View data not found for this location.');
         }
       }
-

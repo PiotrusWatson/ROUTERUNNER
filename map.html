@@ -20,26 +20,26 @@
 
   </head>
   <body>
-    	
+
 	<!--div id="nav" style="width:80%;height:80%;margin:auto"-->
 
-	
-    	
-    
 
 
 
-    <div id="pano" style="width: 75%; height: 100%;float:left; z-index: -1;"></div>
-    <div id="map" style="width: 25%; height: 100%;float:left; z-index: -1;"></div>
+
+
+
+    <div id="pano" style="width: 75%; height: 100%;float:left;"></div>
+    <div id="map" style="width: 25%; height: 100%;float:left;"></div>
     <h1 id="title">Route Runner</h1>
-    <div style = "position: absolute; left:35%; margin-left: -25px; top:80%; overflow: hidden;">
-    <img src="media/back.png" style="width: 10%;opacity: 0.5;" onclick="goBackward()">
+    <div style = "position: absolute; left:35%; margin-left: -25px; top:80%; overflow: hidden; z-index: 2;">
+    <img src="media/back.png" style="width: 10%;opacity: 0.5; z-index: 2;" onclick="goBackward()">
     <!--img src="media/play.png" style="width: 6%;opacity: 0.5;" -->
-    <img src="media/forward.png" style="width: 10%;opacity: 0.5;" onclick="goForward()">
-    
+    <img src="media/forward.png" style="width: 10%;opacity: 0.5; z-index: 2;" onclick="goForward()">
+
     </div>
 
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="scripts/map.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBOVPNlWVB4MIP239EKZSy3znmo5w2xY&callback=initMap">
