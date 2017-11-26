@@ -20,6 +20,7 @@
    clickToGo: false
  };
  var marker;
+ var position;
 
 
  /**Loops over wayPoints and pulls out only each lat and long value. Then
@@ -117,7 +118,7 @@
 
    //panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
    console.log(wayPointz[place].lat);
-   var position = {
+   position = {
      lat: parseFloat(wayPointz[place].lat),
      lng: parseFloat(wayPointz[place].lon)
    }
@@ -140,7 +141,7 @@
        marker.setMap(null);
      //make a marker
      marker = new google.maps.Marker({
-       position: data.location.latLng,
+       position: position,
        map: map,
        title: data.location.description
      });
