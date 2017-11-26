@@ -19,6 +19,7 @@ $(document).ready(function(){
 var map;
 var panorama;
 var options = {disableDefaultUI: true, panControl: true, clickToGo: false};
+var marker;
 
 function initMap() {
     var berkeley = {lat: 46.003257147967815399169921875,
@@ -78,12 +79,16 @@ function initMap() {
 
     function processSVData(data, status) {
     	if (status === 'OK') {
-          var marker = new google.maps.Marker({
+				//delete last marker
+				if (marker !== undefined)
+					marker.setMap(null);
+				//make a marker
+        marker = new google.maps.Marker({
             position: data.location.latLng,
             map: map,
             title: data.location.description
           });
-
+					//set the position of the panorama
           panorama.setPano(data.location.pano);
           panorama.setPov({
             heading: 270,
