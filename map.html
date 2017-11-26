@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>RouteRunner</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <style>
     /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -39,9 +40,9 @@
   <div id="map" style="width: 25%; height: 100%;float:left;"></div>
   <h1 id="title">Route Runner</h1>
   <div style="position: absolute; left:35%; margin-left: -25px; top:80%; overflow: hidden; z-index: 2;">
-    <img src="media/back.png" style="width: 10%;opacity: 0.5; z-index: 2;" onclick="goBackward()">
-    <!--img src="media/play.png" style="width: 6%;opacity: 0.5;" -->
-    <img src="media/forward.png" style="width: 10%;opacity: 0.5; z-index: 2;" onclick="goForward()">
+    <span id="back" class="fa fa-step-backward fa-5x" style="opacity: 0.8; z-index: 2; margin: 25px" onclick="goBackward()"></span>
+    <span id="play" class="fa fa-play fa-5x" style="opacity: 0.8; margin: 25px"></span>
+    <span id="forward" class="fa fa-step-forward fa-5x" style="opacity: 0.8; z-index: 2; margin: 25px" onclick="goForward()"></span>
 
   </div>
 
