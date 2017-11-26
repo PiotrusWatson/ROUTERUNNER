@@ -5,7 +5,6 @@
      console.error("YOU SHOULDN'T BE HERE (TODO: add UI stuff telling people how shouldn't be here they are)");
    } else {
      console.log(wayPoints);
-
    }
  });
 
@@ -63,7 +62,7 @@
  function initMap() {
    var sv = new google.maps.StreetViewService();
    panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), options);
-	 position = { lat: parseFloat(wayPoints[place].lat),
+	 position = {lat: parseFloat(wayPoints[place].lat),
 		lng: parseFloat(wayPoints[place].lon)};
    // Set up the map.
    map = new google.maps.Map(document.getElementById('map'), {
@@ -114,6 +113,7 @@
    }, processSVData);
 
 
+
  }
  var wayPointz = wayPoints;
 
@@ -141,7 +141,7 @@
        map: map,
        title: data.location.description
      });
-
+		 map.setCenter(position);
 
 		 var angle = getAngle(lastpos, data.location.latLng);
 
@@ -153,6 +153,7 @@
        heading: angle,
        pitch: 0
      });
+
      panorama.setVisible(true);
 
    } else {
