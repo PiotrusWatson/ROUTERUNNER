@@ -27,16 +27,31 @@
  function drawPath(maps) {
    var drawnPath = [];
    for (var i = 0; i < wayPoints.length; i++) {
+		 //get position
      var pos = {
        lat: parseFloat(wayPoints[i].lat),
        lng: parseFloat(wayPoints[i].lon)
      };
+		 //add to path
      drawnPath.push(pos);
+		 //slap a circle there
+		 var point = new google.maps.Circle({
+			 strokeColor: 'Black',
+			 strokeOpacity: 1,
+			 strokeWeight: 0.5,
+			 fillColor: 'Red',
+			 fillOpacity: 1,
+			 map: maps,
+			 center: pos,
+			 radius: 1
+		 });
+
    }
+	 //draw the path
    var path = new google.maps.Polygon({
      paths: drawnPath,
      strokeColor: 'Red',
-     strokeOpacity: 1,
+     strokeOpacity: 0.5,
      strokeWeight: 3,
    });
 
