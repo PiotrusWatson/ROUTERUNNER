@@ -1,6 +1,3 @@
- /*
-  * Click the map to set a new location for the Street View camera.
-  */
  //pulls out saved waypoints item made in uploadfile.js
  wayPoints = JSON.parse(localStorage.getItem("wayPoints")).wayPoints;
  $(document).ready(function() {
@@ -22,12 +19,14 @@
  var marker;
  var position;
  var lastpos;
+ var place = 0;
 
 
  /**Loops over wayPoints and pulls out only each lat and long value. Then
  draws a path with it and returns that**/
  function drawPath(maps) {
    var drawnPath = [];
+	 //get all positions, build path + points
    for (var i = 0; i < wayPoints.length; i++) {
      //get position
      var pos = {
@@ -61,26 +60,14 @@
 
  }
 
-
- function angleBetweenTwoPoints(pos1, pos2) {
-
-
-
- }
-
-
  function initMap() {
-   var berkeley = {
-     lat: 46.003257147967815399169921875,
-     lng: 8.95168307237327098846435546875
-   };
    var sv = new google.maps.StreetViewService();
-
    panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), options);
-
+	 position = { lat: parseFloat(wayPoints[place].lat),
+		lng: parseFloat(wayPoints[place].lon)};
    // Set up the map.
    map = new google.maps.Map(document.getElementById('map'), {
-     center: berkeley,
+     center: position,
      zoom: 16,
      streetViewControl: false
    });
@@ -88,18 +75,12 @@
 
    // Set the initial Street View camera to the center of the map
    sv.getPanorama({
-     location: berkeley,
+     location: position,
      radius: 50
    }, processSVData);
 
-   // Look for a nearby Street View panorama when the map is clicked.
-   // getPanoramaByLocation will return the nearest pano when the
-   // given radius is 50 meters or less.
-   map.addListener('click', function(event) {
-     // sv.getPanorama({location: event.latLng, radius: 50}, processSVData);
-   });
  }
- var place = 0;
+
 
  function goForward() {
    place++;
@@ -121,7 +102,6 @@
 
  function changePosition() {
 
-   //panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
    position = {
      lat: parseFloat(wayPointz[place].lat),
      lng: parseFloat(wayPointz[place].lon)
@@ -133,10 +113,22 @@
      radius: 50
    }, processSVData);
 
-   console.log("running code" + place);
 
  }
  var wayPointz = wayPoints;
+
+ //set where we're facing to be either 270 or an angle calculated from the
+ //last place we went to
+ //please note: i have no idea if this faces forward or backwards
+ function getAngle(lastpos, thisPos) {
+	 if (lastpos === undefined) {
+		 var angle = 270;
+	 } else {
+		 var angle = google.maps.geometry.spherical.computeHeading(thisPos,
+			 lastpos);
+	 }
+	 return angle;
+ }
 
  function processSVData(data, status) {
    if (status === 'OK') {
@@ -150,14 +142,9 @@
        title: data.location.description
      });
 
-     //set where we're facing to be either 270 or an angle calculated from the
-     //last place we went to
-     if (lastpos === undefined) {
-       var angle = 270;
-     } else {
-       var angle = google.maps.geometry.spherical.computeHeading(data.location.latLng,
-         lastpos);
-     }
+
+		 var angle = getAngle(lastpos, data.location.latLng);
+
      lastpos = data.location.latLng;
 
      //set the position of the panorama
@@ -168,20 +155,6 @@
      });
      panorama.setVisible(true);
 
-
-     marker.addListener('click', function() {
-       var markerPanoID = data.location.pano;
-       // Set the Pano to use the passed panoID.
-       panorama.setPano(markerPanoID);
-       panorama.setPov({
-         heading: angle,
-         pitch: 0
-       });
-       panorama.setVisible(true);
-
-
-
-     });
    } else {
      console.error('Street View data not found for this location.');
    }
