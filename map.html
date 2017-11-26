@@ -5,22 +5,8 @@
   <meta charset="utf-8">
   <title>RouteRunner</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/map.css">
   <style>
-    /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-
-    #map {
-      height: 100%;
-    }
-
-    /* Optional: Makes the sample page fill the window. */
-
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
   </style>
 
 </head>
@@ -35,13 +21,13 @@
 
 
 
-  <div id="pano" style="width: 75%; height: 100%;float:left;"></div>
-  <div id="map" style="width: 25%; height: 100%;float:left;"></div>
+  <div id="pano"></div>
+  <div id="map"></div>
   <h1 id="title">Route Runner</h1>
-  <div style="position: absolute; left:35%; margin-left: -25px; top:80%; overflow: hidden; z-index: 2;">
-    <img src="media/back.png" style="width: 10%;opacity: 0.5; z-index: 2;" onclick="goBackward()">
-    <!--img src="media/play.png" style="width: 6%;opacity: 0.5;" -->
-    <img src="media/forward.png" style="width: 10%;opacity: 0.5; z-index: 2;" onclick="goForward()">
+  <div id="controlpanel">
+    <img id="back" src="media/back.png" onclick="goBackward()">
+    <!--img id="play" src="media/play.png" -->
+    <img id="forward" src="media/forward.png" onclick="goForward()">
 
   </div>
 
