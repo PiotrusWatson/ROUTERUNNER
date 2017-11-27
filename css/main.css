@@ -46,6 +46,7 @@ body {
 	border-radius: 25px; 
 	color: #ffffff; 
 	opacity: 0.7;
+	z-index: 2;
 
 }
 
