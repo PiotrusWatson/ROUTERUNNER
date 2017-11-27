@@ -72,11 +72,12 @@ function parseGPX(text, _callback) {
     //store int version of datestr
     point.addDateTime(datestr);
     wayPoints.push(point);
-    var data = {}
+  }
+    var data = {};
     data.wayPoints = wayPoints;
     localStorage.setItem("wayPoints", JSON.stringify(data));
     _callback();
-  }
+  
 }
 
 
