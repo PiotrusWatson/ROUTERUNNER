@@ -145,6 +145,7 @@ function processSVData (data, status) {
 }
 
 var id
+var di
 var width
 function animate () {
   if (width > 100) {
@@ -159,7 +160,7 @@ function animate () {
 function nextStep () {
   if (playing) {
     const time = wayPointz[place + 1].datetime - wayPointz[place].datetime
-    window.setTimeout(goForward, time)
+    di = setTimeout(goForward, time)
     width = 0
     id = setInterval(animate, time / 100)
   }
@@ -175,5 +176,7 @@ function play () {
 
 function pause () {
   playing = false
+  clearInterval(id)
+  clearTimeout(di)
   $('#cover').removeClass('hide')
 }
