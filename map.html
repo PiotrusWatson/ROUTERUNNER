@@ -1,42 +1,25 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>RouteRunner</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/map.css">
-  <style>
-  </style>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-
-  <!--div id="nav" style="width:80%;height:80%;margin:auto"-->
-
-
-
-
-
-
-
-  <div id="pano"></div>
-  <div id="map"></div>
-  <h1 id="title">Route Runner</h1>
-  <div id="controlpanel">
-    <img id="back" src="media/back.png" onclick="goBackward()">
-    <!--img id="play" src="media/play.png" -->
-    <img id="forward" src="media/forward.png" onclick="goForward()">
-
+  <div id="cover" onclick="play()">
+    <i id="play" class="fa fa-play"></i>
   </div>
-
+  <div id="band"><div id="streatch"></div></div>
+  <div id="hodor">
+    <div id="pano"></div>
+    <div id="map"></div>
+  </div>
+  <h1 id="title">Route Runner</h1>
+  <i id="pause" class="fa fa-pause hidden" onclick="pause()"></i>
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   <script src="scripts/map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBOVPNlWVB4MIP239EKZSy3znmo5w2xY&callback=initMap">
-  </script>
-  </div>
-
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBOVPNlWVB4MIP239EKZSy3znmo5w2xY&callback=initMap"></script>
 </body>
-
 </html>
