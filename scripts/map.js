@@ -81,6 +81,17 @@ function initMap () {
   )
 }
 
+function onClickGoForward(){
+  goForward();
+  pause();
+}
+
+function onClickGoBackward(){
+  goBackward();
+  pause();
+}
+
+
 function goForward () {
   place++
   if (place === wayPoints.length - 1) {
