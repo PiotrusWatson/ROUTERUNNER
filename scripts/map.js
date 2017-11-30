@@ -166,17 +166,21 @@ function nextStep () {
   }
 }
 
-var playing = false
+var playing = false;
 
 function play () {
-  $('#cover').addClass('hide')
-  playing = true
-  nextStep()
+  $('#cover').addClass('hide');
+  $('#play').addClass('hide');
+  $('#pause').removeClass('hide');
+  playing = true;
+  nextStep();
 }
 
 function pause () {
   playing = false
   clearInterval(id)
   clearTimeout(di)
-  $('#cover').removeClass('hide')
+//  $('#cover').removeClass('hide')
+  $('#pause').addClass('hide');
+  $('#play').removeClass('hide');
 }

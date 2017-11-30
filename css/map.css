@@ -40,6 +40,7 @@ body {
   opacity: 0.5;
   z-index: 2;
 }
+#play,
 #pause{
   position: fixed;
   left: 250px;
@@ -69,7 +70,7 @@ div#cover {
     cursor: pointer;
 }
 
-#play {
+#bigplay {
     position: fixed;
     left: calc(50% - 39px);
     top: calc(50% - 101px);
@@ -81,7 +82,7 @@ div#cover {
 }
 
 .hide {
-    display: none;
+     display: none !important; 
 }
 
 div#band {

@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="cover" onclick="play()">
-    <i id="play" class="fa fa-play"></i>
+    <i id="bigplay" class="fa fa-play"></i>
   </div>
   <div id="band"><div id="streatch"></div></div>
   <div id="hodor">
@@ -17,7 +17,8 @@
     <div id="map"></div>
   </div>
   <h1 id="title">Route Runner</h1>
-  <i id="pause" class="fa fa-pause hidden" onclick="pause()"></i>
+  <i id="play" class="hide fa fa-play" onclick="play()"></i>
+  <i id="pause" class="hide fa fa-pause hide" onclick="pause()"></i>
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   <script src="scripts/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBOVPNlWVB4MIP239EKZSy3znmo5w2xY&callback=initMap"></script>
