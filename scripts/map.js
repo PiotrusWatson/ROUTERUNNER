@@ -83,9 +83,7 @@ function initMap () {
 
 function goForward () {
   place++
-  if (place >= wayPoints.length) {
-    place--
-  } else if (place === wayPoints.length - 1) {
+  if (place === wayPoints.length - 1) {
     place = -1
     pause()
   }
@@ -95,9 +93,6 @@ function goForward () {
 
 function goBackward () {
   place--
-  if (place <= 0) {
-    place++
-  }
   changePosition()
   nextStep()
 }
@@ -125,7 +120,7 @@ function hideStepButtons(){
   if (place <= 0){
     back.addClass('hide');
   }
-  else if (place >= wayPoints.length){
+  else if (place >= wayPoints.length - 1 || place === -1){
     forward.addClass('hide');
   }
   else{
