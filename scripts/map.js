@@ -91,6 +91,17 @@ function goForward () {
   nextStep()
 }
 
+function goBackward () {
+  place--
+  if (place >= wayPoints.length) {
+    place++
+  } else if (place === -1) {
+    pause()
+  }
+  changePosition()
+  nextStep()
+}
+
 function changePosition () {
   position = {
     lat: parseFloat(wayPointz[place].lat),
