@@ -6,6 +6,8 @@ $(document).ready(function () {
   } else {
     console.log(wayPoints)
   }
+
+  hideStepButtons();
 })
 
 var map
@@ -56,7 +58,7 @@ function drawPath (maps) {
 
 function initMap () {
   var sv = new google.maps.StreetViewService();
-  panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), options)
+  panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), options);
   position = {
     lat: parseFloat(wayPoints[place].lat),
     lng: parseFloat(wayPoints[place].lon)
@@ -93,10 +95,8 @@ function goForward () {
 
 function goBackward () {
   place--
-  if (place >= wayPoints.length) {
+  if (place <= 0) {
     place++
-  } else if (place === -1) {
-    pause()
   }
   changePosition()
   nextStep()
@@ -108,6 +108,7 @@ function changePosition () {
     lng: parseFloat(wayPointz[place].lon)
   }
   var sv = new google.maps.StreetViewService()
+  hideStepButtons();
   sv.getPanorama(
     {
       location: position,
@@ -115,6 +116,22 @@ function changePosition () {
     },
     processSVData
   )
+}
+
+/* Hides go backwards if we're at start, and forwards if we're at end*/
+function hideStepButtons(){
+  var back = $('#step-backward');
+  var forward = $('#step-forward');
+  if (place <= 0){
+    back.addClass('hide');
+  }
+  else if (place >= wayPoints.length){
+    forward.addClass('hide');
+  }
+  else{
+    back.removeClass('hide');
+    forward.removeClass('hide');
+  }
 }
 
 var wayPointz = wayPoints
