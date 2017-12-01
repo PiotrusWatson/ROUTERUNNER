@@ -213,7 +213,6 @@ function nextStep () {
     clearInterval(id)
     }
     const time = wayPointz[place + 1].datetime - wayPointz[place].datetime
-    console.log(time);
     di = setTimeout(goForward, time)
     width = 0
     id = setInterval(animate, time/120)
