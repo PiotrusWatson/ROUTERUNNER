@@ -68,6 +68,10 @@ body {
     transform: translate3d(4px, 0, 0);
   }
 }
+@keyframes marquee{
+  from { left: 100%;}
+  to{ left: -7em;}
+}
 
 .icon-old{
   position: absolute;

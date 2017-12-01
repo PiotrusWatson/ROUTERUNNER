@@ -69,3 +69,26 @@ div#streatch {
     background-color: green;
     width: 0px;
 }
+
+
+/*OWNZONE*/
+
+#importantStuff{
+  position: absolute;
+  left: calc(50% - 39px);
+  top: calc(50% - 101px);
+
+}
+.skele{
+  position: absolute;
+  width: 151px;
+  height: 200px;
+  background: url("../static/skeltw2.png") left center;
+  animation: skelerun 0.8s steps(24) infinite, marquee 5s infinite;
+  z-index: 99;
+  top: calc(50% - 101px);
+
+}
+@keyframes skelerun {
+  100% { background-position: -3624px;}
+}
