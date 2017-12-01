@@ -69,7 +69,7 @@ body {
   }
 }
 
-.icon{
+.icon-old{
   position: fixed;
   z-index: 1;
   opacity: 0.8;
@@ -79,6 +79,18 @@ body {
   margin-top: 25px;
   margin-left: 5px;
 }
+.icon{
+  position: fixed;
+  z-index: 1;
+  opacity: 0.8;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.82);
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+
 .icon:not(:focus):not(:active):hover{
   animation: rainbow 1s, shake 1s;
   animation-iteration-count: infinite;
@@ -91,18 +103,34 @@ body {
 
 }
 #step-forward{
-  left: 15%;
-  top: 0%;
+  left: 45%;
+  top: 80%;
 }
 #step-backward{
-  left:11%;
-  top: 0%;
+  left:35%;
+  top: 80%;
 }
 #play,
 #pause{
+  left: 40%;
+  top: 80%;
+}
+
+
+#step-forward-corner{
+  left: 15%;
+  top: 0%;
+}
+#step-backward-corner{
+  left:11%;
+  top: 0%;
+}
+#play-corner,
+#pause-corner{
   left: 13%;
   top: 0%;
 }
+
 #forward{
   width: 10%;
   opacity: 0.5;
