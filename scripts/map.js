@@ -96,22 +96,6 @@ function goBackToIndex(){
   window.location.href = "index.html";
 }
 
-function sickMouseOverAnim(e){
-  var icon = $(e.target);
-  console.log(icon)
-  icon.animate({color: 'blue'}, 'fast');
-/*  icon.animate({color: 'green'}, 'fast');
-  icon.animate({color: 'yellow'}, 'fast');
-  icon.animate({color: 'orange'}, 'fast');
-  icon.animate({color: 'red'}, 'fast');
-  icon.animate({color: 'pink'}, 'fast');
-  icon.animate({color: 'purple'}, 'fast');*/
-}
-
-function stopAnims(e){
-  var icon = $(e.target);
-  //icon.stop(true, true);
-}
 
 function goForward () {
   place++
