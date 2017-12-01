@@ -1,12 +1,13 @@
 //  pulls out saved waypoints item made in uploadfile.js
 var wayPoints = JSON.parse(localStorage.getItem('wayPoints')).wayPoints;
+var audio = $("#lifehurts");
 $(document).ready(function () {
   if (wayPoints === undefined) {
     console.error("YOU SHOULDN'T BE HERE (TODO: add UI stuff telling people how shouldn't be here they are)")
   } else {
     console.log(wayPoints)
   }
-
+  audio.prop("volume", 0);
   hideStepButtons();
 })
 var ticker;
@@ -22,6 +23,16 @@ var position
 var place = 0
 var playing = false;
 var firstTime=true;
+
+function playMusic(){
+  audio.animate({"volume": 1.0}, 1000);
+}
+
+function stopMusic(){
+  audio.animate({"volume": 0}, 1000);
+}
+
+
 /** Loops over wayPoints and pulls out only each lat and long value. Then
 draws a path with it and returns that**/
 function drawPath (maps) {

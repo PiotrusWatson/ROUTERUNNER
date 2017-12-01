@@ -9,8 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+  <audio id="lifehurts" autoplay loop>
+    <source src="static/sicktuness.ogg" type="audio/ogg">
+  </audio>
   <div id="cover" onclick="play()">
-    <i id="bigplay" class="icon fa fa-play"></i>
+    <i id="bigplay" class="icon fa fa-play" onmouseover="playMusic()" onmouseout="stopMusic()"></i>
   </div>
 
   <div id="dynamicCover" class="hide">
@@ -25,12 +29,12 @@
     <div id="map"></div>
   </div>
   <h1 id="title">Route Runner</h1>
-  <i id="step-backward" class="icon fa fa-step-backward fa-5x" onclick="onClickGoBackward(event)"></i>
-  <i id="play" class="icon fa fa-play fa-5x" onclick="clickPlay()"></i>
-  <i id="pause" class="icon hide fa fa-pause fa-5x" onclick="clickPause()"></i>
-  <i id="step-forward" class="icon fa fa-step-forward fa-5x" onclick="onClickGoForward(event)"></i>
+  <i id="step-backward" class="icon fa fa-step-backward fa-5x" onclick="onClickGoBackward(event)" onmouseover="playMusic()" onmouseout="stopMusic()"></i>
+  <i id="play" class="icon fa fa-play fa-5x" onclick="clickPlay()" onmouseover="playMusic()" onmouseout="stopMusic()"></i>
+  <i id="pause" class="icon hide fa fa-pause fa-5x" onclick="clickPause()" onmouseover="playMusic()" onmouseout="stopMusic()"></i>
+  <i id="step-forward" class="icon fa fa-step-forward fa-5x" onclick="onClickGoForward(event)"onmouseover="playMusic()" onmouseout="stopMusic()"></i>
 
-  <i id="back-to-index" class="icon fa fa-caret-square-o-left fa-5x" onclick="goBackToIndex();"></i>
+  <i id="back-to-index" class="icon fa fa-caret-square-o-left fa-5x" onclick="goBackToIndex();" onmouseover="playMusic()" onmouseout="stopMusic()"></i>
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   <script src="scripts/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBOVPNlWVB4MIP239EKZSy3znmo5w2xY&callback=initMap"></script>
