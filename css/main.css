@@ -40,6 +40,16 @@ h2 {
 
 }
 
+#para{
+	top: 60%;
+	position: absolute;
+	color:white;
+	text-align: center;
+	animation: rainbow 3s infinite;
+	left: 10%;
+
+}
+
 #drop{
 	top: 40%;
 	left: 23%;
