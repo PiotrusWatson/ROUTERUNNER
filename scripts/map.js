@@ -207,41 +207,16 @@ function animate () {
   }
 }
 
-function animateDynamicCover(){
-  var play = $('#dynamicbigplay');
-  var pause = $('#bigpause');
-  var cover = $('#dynamicCover');
-  if (playing){
-    pause.addClass('hide');
-    play.removeClass('hide');
-  }
-  else{
-    play.addClass('hide');
-    pause.removeClass('hide');
-  }
-  cover.removeClass('hide');
-  ticker = setTimeout(function(){
-      cover.removeClass('visualhide');
-
-  }, 20);
-
-  cover.addClass('visualhide');
-  cover.one('transitionend', function(e){
-    cover.addClass('hide');
-  });
-}
-
-
-
-
-
-
 function nextStep () {
   if (playing) {
+    if(id){
+    clearInterval(id)
+    }
     const time = wayPointz[place + 1].datetime - wayPointz[place].datetime
+    console.log(time);
     di = setTimeout(goForward, time)
     width = 0
-    id = setInterval(animate, time / 100)
+    id = setInterval(animate, time/120)
   }
 }
 
@@ -272,4 +247,28 @@ function pause () {
 //  $('#cover').removeClass('hide')
   $('#pause').addClass('hide');
   $('#play').removeClass('hide');
+}
+
+function animateDynamicCover(){
+  var play = $('#dynamicbigplay');
+  var pause = $('#bigpause');
+  var cover = $('#dynamicCover');
+  if (playing){
+    pause.addClass('hide');
+    play.removeClass('hide');
+  }
+  else{
+    play.addClass('hide');
+    pause.removeClass('hide');
+  }
+  cover.removeClass('hide');
+  ticker = setTimeout(function(){
+      cover.removeClass('visualhide');
+
+  }, 20);
+
+  cover.addClass('visualhide');
+  cover.one('transitionend', function(e){
+    cover.addClass('hide');
+  });
 }
