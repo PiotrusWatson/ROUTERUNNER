@@ -1,13 +1,37 @@
 body {
 	height: 500px;
 	font-family: "Open Sans";
-	background-image: url("streetview.jpg");
-	background-size: cover;
+
 }
 h2 {
 	font-size: 4vw;
 	color: white;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.82);
+}
+
+
+#content{
+	position: fixed;
+	left:0;
+	right:0;
+	position: fixed;
+	z-index: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#content:before{
+	content: "";
+	position: fixed;
+	background-image: url("streetview.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	display: block;
+	z-index: -1;
+	left:0;
+	right:0;
+
+	filter: blur(5px) saturate(150%);
 }
 #centredText {
 
