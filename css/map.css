@@ -51,6 +51,24 @@ body {
   100% {color: purple;}
 }
 
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 .icon{
   position: fixed;
   z-index: 1;
@@ -62,8 +80,7 @@ body {
   margin-left: 5px;
 }
 .icon:hover{
-  animation-name: rainbow;
-  animation-duration: 1s;
+  animation: rainbow 1s, shake 1s;
   animation-iteration-count: infinite;
 }
 #step-forward{
