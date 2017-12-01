@@ -40,7 +40,7 @@ body {
 
 #title{
 	top: 0px;
-	position: fixed;
+	position: absolute;
 	margin-left: -25px;
 	margin: 15px;
 	color: #ffffff;
@@ -58,7 +58,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 3vw;
     margin: 4px 2px;
     cursor: pointer;
 }
