@@ -102,7 +102,7 @@ body {
   z-index: 2;
 }
 
-
+div#dynamicCover,
 div#cover {
     position: fixed;
     height: 100%;
@@ -110,9 +110,12 @@ div#cover {
     background-color: rgba(0, 0, 0, 0.59);
     z-index: 3;
     cursor: pointer;
+    transition: all 0.5s linear;
 }
 
-#bigplay {
+#bigplay,
+#bigpause,
+#dynamicbigplay {
     position: fixed;
     left: calc(50% - 39px);
     top: calc(50% - 101px);

@@ -20,7 +20,8 @@ var options = {
 var marker
 var position
 var place = 0
-
+var playing = false;
+var firstTime=true;
 /** Loops over wayPoints and pulls out only each lat and long value. Then
 draws a path with it and returns that**/
 function drawPath (maps) {
@@ -82,7 +83,6 @@ function initMap () {
 }
 
 function onClickGoForward(e){
-  console.log(e);
   goForward();
   pause();
 }
@@ -196,6 +196,38 @@ function animate () {
   }
 }
 
+function animateDynamicCover(){
+  var play = $('#dynamicbigplay');
+  var pause = $('#bigpause');
+  var cover = $('#dynamicCover');
+  console.log(play);
+  console.log(pause);
+  console.log(playing);
+  if (playing){
+    pause.addClass('hide');
+    play.removeClass('hide');
+  }
+  else{
+    play.addClass('hide');
+    pause.removeClass('hide');
+  }
+  cover.removeClass('hide');
+  setTimeout(function(){
+      cover.removeClass('visualhide');
+
+  }, 20);
+
+  cover.addClass('visualhide');
+  cover.one('transitionend', function(e){
+    cover.addClass('hide');
+  });
+}
+
+
+
+
+
+
 function nextStep () {
   if (playing) {
     const time = wayPointz[place + 1].datetime - wayPointz[place].datetime
@@ -205,13 +237,22 @@ function nextStep () {
   }
 }
 
-var playing = false;
+function clickPlay(){
+  playing = true;
+  animateDynamicCover();
+  play();
+}
 
+function clickPause(){
+  playing = false;
+  animateDynamicCover();
+  pause();
+}
 function play () {
   $('#cover').addClass('hide');
   $('#play').addClass('hide');
   $('#pause').removeClass('hide');
-  playing = true;
+  playing=true;
   nextStep();
 }
 
@@ -219,6 +260,7 @@ function pause () {
   playing = false
   clearInterval(id)
   clearTimeout(di)
+
 //  $('#cover').removeClass('hide')
   $('#pause').addClass('hide');
   $('#play').removeClass('hide');
