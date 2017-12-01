@@ -79,9 +79,16 @@ body {
   margin-top: 25px;
   margin-left: 5px;
 }
-.icon:hover{
+.icon:not(:focus):not(:active):hover{
   animation: rainbow 1s, shake 1s;
   animation-iteration-count: infinite;
+}
+.icon:active,
+.icon:focus{
+  animation-play-state: paused;
+  color: black;
+  text-shadow: -3px -8px 9px #f78aa0;
+
 }
 #step-forward{
   left: 15%;

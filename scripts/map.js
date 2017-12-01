@@ -67,6 +67,7 @@ function removeCover(){
   cover.addClass('hide');
 }
 
+
 function initMap () {
   var sv = new google.maps.StreetViewService();
   panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), options);
