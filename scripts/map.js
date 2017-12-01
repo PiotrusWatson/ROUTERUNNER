@@ -166,6 +166,7 @@ function getAngle (thisPos, nextPos) {
 }
 
 function processSVData (data, status) {
+  // delete last marker
   var location;
   if (data === null){
     location = "somewhere in paris";
@@ -184,7 +185,10 @@ function processSVData (data, status) {
   map.setCenter(position)
 
   if (status === 'OK') {
-    // delete last marker
+    $('#nodata').addClass('hide');
+    $('#dynamicCover').addClass('hide');
+
+
     // set the position of the panorama
     panorama.setPano(data.location.pano)
     panorama.setPov({
@@ -199,7 +203,14 @@ function processSVData (data, status) {
     })
     panorama.setVisible(true)
   } else {
-    console.error('Street View data not found for this location.')
+    pause();
+    $('#dynamicCover').removeClass('hide');
+    $('#dynamicbigplay').addClass('hide');
+    $('#bigpause').addClass('hide');
+    $('#nodata').removeClass('hide');
+    place++;
+    changePosition();
+
   }
 }
 

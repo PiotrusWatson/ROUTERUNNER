@@ -4,7 +4,11 @@ body {
 	background-image: url("streetview.jpg");
 	background-size: cover;
 }
-
+h2 {
+	font-size: 4vw;
+	color: white;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.82);
+}
 #centredText {
 
 
@@ -17,7 +21,7 @@ body {
 }
 
 #drop{
-	font-family: "Arial";
+	font-family: "Open Sans";
 	font-size: 50px;
 	font-size: 3.5vw;
 	text-align: center;

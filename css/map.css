@@ -13,7 +13,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
+#nodata{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
 #pano {
   width: 75%;
   height: 100%;
@@ -67,10 +71,6 @@ body {
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
-}
-@keyframes marquee{
-  from { left: 100%;}
-  to{ left: -7em;}
 }
 
 .icon-old{
@@ -148,8 +148,7 @@ body {
 }
 
 div#dynamicCover,
-div#cover
-div#noDataCover {
+div#cover{
     position: fixed;
     height: 100%;
     width: 100%;
@@ -157,9 +156,6 @@ div#noDataCover {
     z-index: 3;
     cursor: pointer;
     transition: all 0.5s linear;
-}
-div#noDataCover{
-  z-index: 7 !important;
 }
 
 #bigplay,
