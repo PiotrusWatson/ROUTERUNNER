@@ -8,13 +8,14 @@ function wayPoint(lat, lon, datestr) {
         this.datetime = Date.parse(datestr);
     };
 }
-
 function doTheDrag(e) {
     e.stopPropagation();
     e.preventDefault();
     e.dataTransfer.dropEffect = 'copy';
+    console.log(e.dataTransfer.files[0]);
     // changes drop box border colour to orange when file is dragged onto it
-    document.getElementById('drop').style.border = '8px solid #FFCC00';
+    $('#drop').css({transform: "scale(1.5) perspective(1px)",
+    border: '8px solid #FFCC00'});
 }
 
 function readFile(f) {
@@ -31,7 +32,7 @@ function doTheDrop(e) {
     //stop normal things from	console.log(files); happening
     e.stopPropagation();
     e.preventDefault();
-    doTheUpload(e.dataTransfer.files[0]); //concat might break it idk?
+    doTheUpload(e.dataTransfer.files[0]);
 }
 
 function doTheClick(e) {
@@ -45,11 +46,12 @@ function doTheUpload(uploadedfile) {
     //TODO: flesh out function.
     // changes drop box border colour to green if gpx file, red if not
     if (uploadedfile.name.match('.gpx$')) {
-        document.getElementById('drop').style.border = '8px solid #00FF00';
+        $('#drop').css({"border": "8px solid #00FF00"});
+        readFile(uploadedfile);
     } else {
         document.getElementById('drop').style.border = '8px solid #FF0000';
     }
-    readFile(uploadedfile);
+
 }
 
 /** Opens the gpx text and dumps it all into point objects.
@@ -78,7 +80,8 @@ function parseGPX(text, _callback) {
 $(document).ready(function() {
     // changes drop box border colour back to default
     $('body').hover(function() {
-        $('#drop').css('border', '5px solid #64C4AF');
+        $('#drop').css({border: '5px solid #a83800',
+      transform: "scale(1)"});
     });
 
     //handling all different types of interaction with that middle block - clicks + drags!!

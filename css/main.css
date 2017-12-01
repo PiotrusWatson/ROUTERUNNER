@@ -1,5 +1,4 @@
 body {
-	height: 500px;
 	font-family: "Open Sans";
 
 }
@@ -14,10 +13,11 @@ h2 {
 	position: fixed;
 	left:0;
 	right:0;
-	position: fixed;
 	z-index: 0;
 	margin-left: 20px;
 	margin-right: 20px;
+	height: 100%;
+	width: 100%;
 }
 #content:before{
 	content: "";
@@ -33,10 +33,6 @@ h2 {
 
 	filter: blur(5px) saturate(150%);
 }
-#centredText {
-
-
-}
 
 #secretclickbox{
 	display: None;
@@ -45,26 +41,87 @@ h2 {
 }
 
 #drop{
-	font-family: "Open Sans";
+	top: 40%;
+	left: 23%;
 	font-size: 50px;
 	font-size: 3.5vw;
 	text-align: center;
+	font-weight: bold;
 	vertical-align: middle;
+	position: absolute;
+	color:white;
+	background: linear-gradient(45deg, #a83800 0%, #ea5b02);
+	border: 5px solid #a83800;
 
-
-	background-color:#91CED7;
 	border-radius: 10px;
 
 
 	line-height: 20%;
 	width: 50%;
-	height: 20%;
+	height: 15%;
 	padding: 10px;
 	margin: auto;
-	border: 5px solid #64C4AF;
+
+ transition: all 1s ease;
+ transform: scale(1);
+
 
 }
 
+#drop:not(:focus):not(:active):hover{
+	text-shadow: 3px 6px #272634;
+	box-shadow: 3px 6px #272634;
+	animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+#drop:active,
+#drop:focus{
+	  animation-play-state: paused;
+		box-shadow: 3px 6px #272634;
+}
+@keyframes rainbow {
+  0%  {color: blue;}
+  15% {color: green;}
+  30% {color: yellow;}
+  45% {color: orange;}
+  60% {color: red;}
+  75% {color: pink;}
+  100% {color: purple;}
+}
+@keyframes backrainbow{
+	0%  {background-color: blue;
+	border-color: blue;}
+	15% {background-color: green;
+	border-color: green;}
+	30% {background-color: yellow;
+	border-color: yellow;}
+	45% {background-color: orange;
+	border-color: orange;}
+	60% {background-color: red;
+	border-color: red;}
+	75% {background-color: pink;
+	border-color: pink;}
+	100% {background-color: purple;
+	border-color: purple;}
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 
 #title{
 	top: 0px;
