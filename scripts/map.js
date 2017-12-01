@@ -9,7 +9,7 @@ $(document).ready(function () {
 
   hideStepButtons();
 })
-
+var ticker;
 var map
 var panorama
 var options = {
@@ -55,6 +55,16 @@ function drawPath (maps) {
     strokeWeight: 3,
   })
   path.setMap(maps)
+}
+
+function removeCover(){
+  if (ticker){
+    clearTimeout(ticker);
+    ticker=undefined;
+  }
+  var cover = $('dynamicCover');
+  cover.addClass('visualhide');
+  cover.addClass('hide');
 }
 
 function initMap () {
@@ -200,9 +210,6 @@ function animateDynamicCover(){
   var play = $('#dynamicbigplay');
   var pause = $('#bigpause');
   var cover = $('#dynamicCover');
-  console.log(play);
-  console.log(pause);
-  console.log(playing);
   if (playing){
     pause.addClass('hide');
     play.removeClass('hide');
@@ -212,7 +219,7 @@ function animateDynamicCover(){
     pause.removeClass('hide');
   }
   cover.removeClass('hide');
-  setTimeout(function(){
+  ticker = setTimeout(function(){
       cover.removeClass('visualhide');
 
   }, 20);
