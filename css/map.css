@@ -144,7 +144,8 @@ body {
 }
 
 div#dynamicCover,
-div#cover {
+div#cover
+div#noDataCover {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -152,6 +153,9 @@ div#cover {
     z-index: 3;
     cursor: pointer;
     transition: all 0.5s linear;
+}
+div#noDataCover{
+  z-index: 7 !important;
 }
 
 #bigplay,

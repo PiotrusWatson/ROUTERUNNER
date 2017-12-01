@@ -166,16 +166,25 @@ function getAngle (thisPos, nextPos) {
 }
 
 function processSVData (data, status) {
+  var location;
+  if (data === null){
+    location = "somewhere in paris";
+  }
+  else{
+    location = data.location.description;
+  }
+
+  if (marker !== undefined) marker.setMap(null)
+  // make a marker
+  marker = new google.maps.Marker({
+    position: position,
+    map: map,
+    title: location
+  })
+  map.setCenter(position)
+
   if (status === 'OK') {
     // delete last marker
-    if (marker !== undefined) marker.setMap(null)
-    // make a marker
-    marker = new google.maps.Marker({
-      position: position,
-      map: map,
-      title: data.location.description
-    })
-    map.setCenter(position)
     // set the position of the panorama
     panorama.setPano(data.location.pano)
     panorama.setPov({
