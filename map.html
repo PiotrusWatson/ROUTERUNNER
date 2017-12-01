@@ -20,7 +20,7 @@
   <div id="dynamicCover" class="hide">
     <i id="dynamicbigplay" class="hide fa fa-play"></i>
     <i id="bigpause" class="hide fa fa-pause"></i>
-    <h2 id="nodata" class="hide">No street view data for this location! Please hold...</h1>
+    <h2 id="nodata" class="hide">No street view data nearby! Please hold...</h1>
   </div>
 
   <div id="band"><div id="streatch"></div></div>
@@ -28,7 +28,7 @@
     <div id="pano"></div>
     <div id="map"></div>
   </div>
-  <h1 id="title">Route Runner</h1>
+  <h1 id="title" onclick="goBackToIndex()" onmouseover="playMusic()" onmouseout="stopMusic()">Route Runner</h1>
   <i id="step-backward" class="icon fa fa-step-backward fa-5x" onclick="onClickGoBackward(event)" onmouseover="playMusic()" onmouseout="stopMusic()"></i>
   <i id="play" class="icon fa fa-play fa-5x" onclick="clickPlay()" onmouseover="playMusic()" onmouseout="stopMusic()"></i>
   <i id="pause" class="icon hide fa fa-pause fa-5x" onclick="clickPause()" onmouseover="playMusic()" onmouseout="stopMusic()"></i>

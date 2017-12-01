@@ -145,12 +145,7 @@ div#cover{
     font-size: 10vw;
 }
 
-.hide {
-     display: none !important;
-}
-.visualhide{
-  opacity: 0 !important;
-}
+
 
 div#band {
     height: 5px;

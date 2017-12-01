@@ -8,6 +8,9 @@ function wayPoint(lat, lon, datestr) {
         this.datetime = Date.parse(datestr);
     };
 }
+function reloadPage(){
+  window.location.href = window.location.href;
+}
 function doTheDrag(e) {
     e.stopPropagation();
     e.preventDefault();
